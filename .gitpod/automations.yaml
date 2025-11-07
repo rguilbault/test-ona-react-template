@@ -1,13 +1,7 @@
 tasks:
-    command-0:
-        command: yarn start
-        dependsOn:
-            - init-000
-        description: init task migrated from .gitpod.yml
-        name: 'Task 0: command'
+    command-1:
+        command: npm install
+        description: Installation du projet Vite...
+        name: 'Task 1: npm install'
         triggeredBy:
             - postDevcontainerStart
-    init-000:
-        command: yarn
-        description: init task migrated from .gitpod.yml
-        name: 'Task 0: init'
