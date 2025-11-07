@@ -1,0 +1,28 @@
+{
+  "name": "test-ona-react-template",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "lts"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
+			"settings": {
+				"editor.formatOnSave": true
+			}
+		},
+		"jetbrains": {
+			"plugins": ["com.wix.eslint", "intellij.prettierJS"]
+		}
+	},
+	"forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "Website preview",
+      "onAutoForward": "openPreview",
+      "elevateIfNeeded": true
+    }
+  }
+}
