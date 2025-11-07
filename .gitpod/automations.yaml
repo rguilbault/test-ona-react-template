@@ -1,7 +1,13 @@
 tasks:
     command-1:
         command: npm install
-        description: Installation du projet Vite...
+        description: Installation du projet Vite
         name: 'Task 1: npm install'
+        triggeredBy:
+            - postDevcontainerStart
+    command-2:
+        command: gitpod environment port open 5173 --name "Vite dev" -v
+        description: Ouverture du port pour visualisation
+        name: 'Task 2: Open port 5173'
         triggeredBy:
             - postDevcontainerStart
